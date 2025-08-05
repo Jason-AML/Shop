@@ -1,6 +1,6 @@
 import { fetchProductos } from "../hooks/fetchProductos";
 import { useCarrito } from "../context/CarritoContext";
-
+import { toast } from "react-toastify";
 export const CardList = () => {
   const { agregarAlCarrito } = useCarrito();
   const { producto, error } = fetchProductos();
@@ -12,6 +12,7 @@ export const CardList = () => {
   }
   const handleAgregar = (producto) => {
     agregarAlCarrito(producto);
+    toast.success(`${producto.title} agregado al carrito!`);
   };
   return (
     <div className="container mt-4">

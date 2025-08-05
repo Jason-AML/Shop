@@ -1,5 +1,5 @@
 import { Carrito } from "./Carrito";
-import "./Navbar.css";
+
 export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">

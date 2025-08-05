@@ -2,3 +2,6 @@
   height: 80dvh;
   object-fit: cover;
 }
+.carousel {
+  margin-top: 60px;
+}
