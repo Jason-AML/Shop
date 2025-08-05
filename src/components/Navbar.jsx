@@ -20,8 +20,6 @@ export const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
-            {" "}
-            {/* ← aquí el cambio */}
             <li className="nav-item">
               <Carrito />
             </li>
