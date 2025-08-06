@@ -19,7 +19,10 @@ export const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
+          <ul
+            className="navbar-nav ms-auto gap-5"
+            style={{ display: "flex", alignItems: "center" }}
+          >
             <li>
               <NavLink to="/">Home</NavLink>
             </li>

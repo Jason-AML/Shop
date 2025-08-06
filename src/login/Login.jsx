@@ -2,15 +2,18 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react";
 import { auth } from "../firebase/firebase-config";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const navigate = useNavigate();
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
       await signInWithEmailAndPassword(auth, email, password);
+
       toast.success(`${email} Bienvenido`);
+      navigate("/privatePage");
       console.log(email, password);
     } catch (error) {
       toast.error(`no se ha podido iniciar sesion`);
