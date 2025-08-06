@@ -1,7 +1,7 @@
 .img-carousel {
-  height: 80dvh;
+  height: 100dvh;
   object-fit: cover;
 }
 .carousel {
-  margin-top: 60px;
+  margin-top: 55px;
 }

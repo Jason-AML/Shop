@@ -7,5 +7,9 @@ export const Logout = () => {
     await signOut(auth);
     toast.success(`Vuelve pronto`);
   };
-  return <button onClick={handleLogout}>Cerrar sesión</button>;
+  return (
+    <button onClick={handleLogout} className="my-5">
+      Cerrar sesión
+    </button>
+  );
 };

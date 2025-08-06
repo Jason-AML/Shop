@@ -3,8 +3,8 @@ import "../components/Carousel.css";
 import auto1 from "../assets/auto1.jpg";
 export const Carousel = () => {
   return (
-    <div id="carouselExample" className="carousel slide">
-      <div className="carousel-inner">
+    <div id="carouselExample" className="carousel slide  vh-100">
+      <div className="carousel-inner ">
         <div className="carousel-item active">
           <img
             src={auto1}
