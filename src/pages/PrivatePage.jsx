@@ -1,11 +1,13 @@
+import { CardList } from "../components/CardList";
 import { Logout } from "../components/Logout";
 import { Navbar } from "../components/Navbar";
 
 export const PrivatePage = () => {
   return (
-    <div>
+    <section>
       <Navbar />
       <Logout />
-    </div>
+      <CardList />
+    </section>
   );
 };
