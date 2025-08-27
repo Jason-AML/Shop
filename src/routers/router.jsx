@@ -6,7 +6,7 @@ import { SignUp } from "../login/SignUp";
 import { Login } from "../login/Login";
 export const MyRoutes = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="Shop">
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/login" element={<Login />}></Route>
